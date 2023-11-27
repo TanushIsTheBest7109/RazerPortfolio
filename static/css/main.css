@@ -1,0 +1,43 @@
+@keyframes fadedownin{
+    0%{
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+        opacity: 0;
+        transform: translateY(-80px);
+
+
+    }
+    100%{
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        transform: translateY(0px);
+
+    }
+}
+
+@keyframes fadedownin2{
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+
+
+    }
+    100%{
+        transform: translateX(0px);
+
+    }
+}
+
+
+
+
+.div-animated{
+    animation-name: fadedownin;
+    animation-duration: 1s;
+    transition: all 1s ease;
+}
+.sidebar{
+    animation-name: fadedownin2;
+    animation-duration: 1s;
+    transition: all 1s ease;
+}
